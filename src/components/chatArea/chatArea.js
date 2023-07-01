@@ -29,11 +29,14 @@ function ChatArea({ messages }) {
 
   return (
     <div ref={chatAreaRef} className={Styles.chatArea}>
-      {messages.map((message, index) => {
-        const userIndex = user_list.indexOf(message.username);
-        const userClass = `user${userIndex + 1}`;
+      {messages.length === 0 ? (
+        <div className={Styles.noMessage}>Nothing to show in chat</div>
+      ) : (
+        messages.map((message, index) => {
+          const userIndex = user_list.indexOf(message.username);
+          const userClass = `user${userIndex + 1}`;
 
-        return (
+          return (
               <div className={Styles.container}>
                 <span className={Styles.username}>{message.username}: </span>
                 <div key={index} className={`${Styles.message} ${Styles[userClass]}`}>
@@ -49,8 +52,9 @@ function ChatArea({ messages }) {
                   <span>{likes[index] || 0}</span>
                 </div>
               </div>
-            );
-          })}
+          );
+        })
+      )}
     </div>
   );
 }

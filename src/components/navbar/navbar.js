@@ -11,7 +11,7 @@ function Navbar() {
                     <h1>Chat App</h1>
                 </div>
                 <div className={Style.image}>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvRzSGyoPFkAK611PRdY8mApcrkJOHxX_rXw&usqp=CAU" alt="Logo" />
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxAyd3Dd-5QJbyrcS-VN-ucJlgyVND0R12bA&usqp=CAU" alt="Logo" />
                 </div>
             </div>
         </>

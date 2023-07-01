@@ -61,3 +61,12 @@
 .user5 {
   background-color: #e5b493;
 }
+
+.noMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 18px;
+  color: #888;
+}
