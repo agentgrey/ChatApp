@@ -1,14 +1,20 @@
+/* -------------- IMPORT CSS -------------- */
 import Style from "./footer.module.css";
+/* -------------- IMPORT HOOKS -------------- */
 import React, { useState } from 'react';
+/* -------------- IMPORT COMPONENTS -------------- */
 import ChatArea from "../../components/chatArea/chatArea";
 
 
-const user_list = ["Alan", "Bob", "Carol", "Dean", "Elin"];
 
+/* List of users*/
+const user_list = ["Alan", "Bob", "Carol", "Dean", "Elin"];
+/* Function to display the input and send button */
 function Footer() {
     
   const [messages, setMessages] = useState([]);
     
+    /* Add a message to list and display it on screen */
     const handleMessageSubmit = (event) => {
         event.preventDefault();
         const inputMessage = event.target.message.value;
@@ -25,6 +31,8 @@ function Footer() {
         }
     };
 
+
+
     return (
         <>
             <ChatArea messages={messages} />
@@ -36,4 +44,7 @@ function Footer() {
     )
 }
 
+
+
+/* -------------- EXPORT MODULES -------------- */
 export default Footer;

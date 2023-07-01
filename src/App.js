@@ -1,6 +1,9 @@
+/* -------------- IMPORT CSS -------------- */
+import "./index.css";
+/* -------------- IMPORT COMPONENTS -------------- */
 import Navbar from "./components/navbar/navbar";
-import ChatArea from "./components/chatArea/chatArea";
 import Footer from "./components/footer/footer";
+
 
 
 function App() {

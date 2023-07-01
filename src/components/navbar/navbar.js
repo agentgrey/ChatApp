@@ -1,5 +1,8 @@
+/* -------------- IMPORT CSS -------------- */
 import Style from "./navbar.module.css";
 
+
+/* Function to display the header */
 function Navbar() {
     return (
         <>
@@ -15,4 +18,6 @@ function Navbar() {
     )
 }
 
+
+/* -------------- EXPORT MODULES -------------- */
 export default Navbar;
