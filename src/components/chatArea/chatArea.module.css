@@ -1,0 +1,42 @@
+.chatArea {
+  height: 450px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  overflow-y: scroll;
+}
+
+.message {
+  display: flex;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.username {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.messageContent {
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.user1 {
+  background-color: #FDD4C1;
+}
+
+.user2 {
+  background-color: #C1FDD9;
+}
+
+.user3 {
+  background-color: #FDC1D3;
+}
+
+.user4 {
+  background-color: #C1C5FD;
+}
+
+.user5 {
+  background-color: #FDD9C1;
+}
